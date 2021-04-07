@@ -24,15 +24,16 @@ class ThemeInPicker extends StatefulWidget {
 class PickerThemeState extends State<ThemeInPicker> {
   @override
   Widget build(BuildContext context) {
-    return (Scaffold(
+    return Scaffold(
       body: SfDateRangePickerTheme(
         data: SfDateRangePickerThemeData(
           brightness: Brightness.dark,
           backgroundColor: Colors.black,
         ),
-        child: Card( margin: const EdgeInsets.fromLTRB(40, 150, 40, 150),
+        child: Card(
+            margin: const EdgeInsets.fromLTRB(40, 150, 40, 150),
             child: SfDateRangePicker()),
       ),
-    ));
+    );
   }
 }
